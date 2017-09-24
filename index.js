@@ -1,11 +1,8 @@
 "use strict";
 
-class Person {
-    constructor(firstName, lastName){
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
-}
+const User = require("./user");
 
-var p = new Person("Andrew","Wan");
-console.log(p.firstName);
+var u1 = new User("Andrew", "Wan");
+console.log(u1);
+console.log(u1.fullName());
+
